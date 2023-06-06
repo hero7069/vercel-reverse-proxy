@@ -6,7 +6,7 @@
 vercel现在每月有100GB的免费流量。本人又基于[cloudflare](https://www.cloudflare.com/)搞了一个反向代理，仓库地址：[cloudflare-reverse-proxy](https://github.com/gaboolic/cloudflare-reverse-proxy)供大家参考，也作为一个备份吧。
 
 ## 部署
-[![Vercel](https://vercel.com/button)](https://vercel.com/import/project?template=https://github.com/gaboolic/vercel-reverse-proxy)
+[![Vercel](https://vercel.com/button)](https://vercel.com/import/project?template=https://github.com/hero7069/vercel-reverse-proxy)
 
 
 ## 使用方法
