@@ -1,6 +1,6 @@
 {
     "version": 2,
     "routes": [
-      {"src": "/(.*)","dest": "http://www.asuscom.asia:3003/"}
+      {"src": "/(.*)","dest": "http://www.asuscom.asia:5000/"}
     ]
 }
