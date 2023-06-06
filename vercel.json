@@ -2,7 +2,7 @@
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "http://www.asuscom.asia:5001"
+      "dest": "https://www.asuscom.asia:5001"
     }
   ]
 }
