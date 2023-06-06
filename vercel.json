@@ -1,6 +1,28 @@
-{
-    "version": 2,
-    "routes": [
-      {"src": "/(.*)","dest": "https://www.asuscom.asia:5001/$1"}
-    ]
-}
+const fetch = require('node-fetch');
+
+module.exports = async (req, res) => {
+  const targetUrl = 'http://www.asuscom.asia:5001'; // 目标网站的URL
+  const targetPath = req.url; // 获取请求的路径
+
+  const response = await fetch(`${targetUrl}${targetPath}`, {
+    headers: {
+      'Content-Type': 'application/json',
+      'Authorization': 'Bearer your-token', // 添加请求头
+      // 添加其他需要的请求头
+    },
+    body: JSON.stringify({ // 修改请求参数
+      param1: 'value1',
+      param2: 'value2',
+    }),
+  });
+
+  const responseData = await response.json(); // 获取响应的JSON数据
+
+  // 自定义响应
+  const customResponse = {
+    message: 'Custom response',
+    data: responseData,
+  };
+
+  res.json(customResponse); // 将响应返回给客户端
+};
