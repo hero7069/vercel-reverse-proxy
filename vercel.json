@@ -1,6 +1,6 @@
 {
     "version": 2,
     "routes": [
-      {"src": "/(.*)","dest": "https://www.asuscom.asia:5001"}
+      {"src": "/(.*)","dest": "https://www.asuscom.asia:5001/$1"}
     ]
 }
