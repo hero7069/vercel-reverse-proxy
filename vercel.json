@@ -1,3 +1,6 @@
 {
-  "rewrites": [{ "source": "/(.*):match/:url*", "destination": "https://www.asuscom.asia:5001/$1:match/:url*" }]
+    "version": 2,
+    "routes": [
+      {"src": "/(.*)","dest": "https://www.asuscom.asia:5001/$1"}
+    ]
 }
